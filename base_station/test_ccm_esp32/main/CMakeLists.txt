@@ -1,0 +1,12 @@
+idf_component_register(
+    SRCS
+        "../../main/tests/test_ccm_esp32.c"
+        "../../main/crypto/aes_wrap.c"
+        "../../../shared/src/packet_codec.c"
+    INCLUDE_DIRS
+        "../../main"
+        "../../../shared/include"
+        "../../../shared/src"
+    REQUIRES 
+        mbedtls 
+)

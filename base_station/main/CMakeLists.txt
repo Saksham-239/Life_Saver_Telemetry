@@ -1,0 +1,25 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "crypto/aes_wrap.c"
+        "radio/nrf24_espidf.c"
+        "config/nvs_config.c"
+        "config/base_provision.c"
+        "system/logger.c"
+        "state/base_sm.c"
+        "ui/oled.c"
+        "ui/buzzer.c"
+        "../../shared/src/packet_codec.c"
+        "../../shared/src/tests/protocol_vectors.c"
+    INCLUDE_DIRS
+        "."
+        "../../shared/include"
+        "../../shared/src"
+    REQUIRES 
+        nvs_flash 
+        mbedtls 
+        driver 
+        esp_timer
+        vfs
+        spiffs
+)

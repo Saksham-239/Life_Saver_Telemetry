@@ -1,0 +1,29 @@
+# Wire frame & protocol tokens
+proto_ver="\x01"
+id_1="\x01"
+id_2="\x02"
+id_3="\x03"
+id_4="\x04"
+id_5="\x05"
+
+# Message types
+msg_hb="\x00"
+msg_down="\x01"
+msg_backup="\x02"
+msg_enemy="\x03"
+msg_medical="\x04"
+msg_complete="\x05"
+msg_em_clear="\x06"
+msg_fall_pend="\x07"
+msg_fall_cancel="\x08"
+
+# Counters & sessions
+ctr_zero="\x00\x00\x00\x00\x00\x00\x00\x00"
+ctr_one="\x01\x00\x00\x00\x00\x00\x00\x00"
+ctr_jump="\x00\x00\x00\x80\x00\x00\x00\x00"
+ctr_wrap="\xff\xff\xff\xff\x00\x00\x00\x00"
+
+# Sensor flags
+sflag_fall="\x01"
+sflag_motion="\x02"
+sflag_lowbatt="\x04"
